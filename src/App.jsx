@@ -4,6 +4,15 @@ import "./App.css";
 import Card from "./assets/Components/ProjectCard";
 import Footer from "./assets/Components/Footer";
 import skill1 from "./assets/skills/c-.png";
+import skill2 from "./assets/skills/c-.png";
+import skill3 from "./assets/skills/css-3.png";
+import skill4 from "./assets/skills/express.png";
+import skill5 from "./assets/skills/html-5.png";
+import skill6 from "./assets/skills/java-script.png";
+import skill7 from "./assets/skills/mongodb.png";
+import skill8 from "./assets/skills/nextjs.png";
+import skill9 from "./assets/skills/python.png";
+import skill10 from "./assets/skills/sql-server.png";
 
 function App() {
   const typedElementRef = useRef(null);
@@ -130,15 +139,15 @@ function App() {
           </div>
           <div className="skills-img">
             <img src={skill1} alt="" />
-            <img src="./src/assets/skills/css-3.png" alt="" />
-            <img src="./src/assets/skills/express.png" alt="" />
-            <img src="./src/assets/skills/html-5.png" alt="" />
-            <img src="./src/assets/skills/java-script.png" alt="" />
-            <img src="./src/assets/skills/nextjs.jpg" alt="" />
-            <img src="./src/assets/skills/nodejs.png" alt="" />
-            <img src="./src/assets/skills/mongodb.png" alt="" />
-            <img src="./src/assets/skills/python.png" alt="" />
-            <img src="./src/assets/skills/sql-server.png" alt="" />
+            <img src={skill2} alt="" />
+            <img src={skill3} alt="" />
+            <img src={skill4} alt="" />
+            <img src={skill5} alt="" />
+            <img src={skill6} alt="" />
+            <img src={skill7} alt="" />
+            <img src={skill8} alt="" />
+            <img src={slill9} alt="" />
+            <img src={skill10} alt="" />
           </div>
         </div>
       </div>
