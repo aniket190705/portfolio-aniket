@@ -13,6 +13,10 @@ import skill7 from "./assets/skills/nextjs.jpg";
 import skill8 from "./assets/skills/nodejs.png";
 import skill9 from "./assets/skills/python.png";
 import skill10 from "./assets/skills/sql-server.png";
+import logo from "./assets/images/logo2.jpg";
+import resumeimg from "./assets/icons/right-arrow.png";
+import skillheading from "./assets/images/skills.png";
+import myimg from "./assets/images/myself.jpg";
 
 function App() {
   const typedElementRef = useRef(null);
@@ -34,7 +38,7 @@ function App() {
       <nav>
         <div className="one">
           <div className="logo">
-            <img src="./src/assets/images/logo.jpg" alt="" />
+            <img src={logo} alt="" />
           </div>
 
           <div className="list">
@@ -65,13 +69,13 @@ function App() {
           <button className="resume-button">
             <p>Rusume</p>
             <div className="arrow-icon">
-              <img src="./src/assets/icons/right-arrow.png" alt="" />
+              <img src={resumeimg} alt="" />
             </div>
           </button>
         </div>
 
         <div className="pic">
-          <img src="src/assets/images/myself.jpg" alt="" />
+          <img src={myimg} alt="" />
         </div>
       </div>
 
@@ -132,7 +136,7 @@ function App() {
       <div className="skills-container">
         <div className="skills">
           <div className="skills-heading">
-            <img src="src/assets/images/skills.png" alt="" />
+            <img src={skillheading} alt="" />
             <h1>
               SKILL-<span className="green-set">SET</span>
             </h1>

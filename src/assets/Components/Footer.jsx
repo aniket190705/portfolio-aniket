@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import "./Footer.css";
+import alertimg from "../images/alert.png";
+import check from "../images/check.png";
+import servererror from "../images/caution.png";
+import paperplane from "../images/paper-plane.png";
 
 const Footer = () => {
   const [sent, setSent] = useState(false);
@@ -65,12 +69,7 @@ const Footer = () => {
             ? ""
             : (errors.msg || errors.email || errors.name) && (
                 <span className="error">
-                  <img
-                    src="src/assets/images/alert.png"
-                    width={"20px"}
-                    height={"20px"}
-                    alt=""
-                  />
+                  <img src={alertimg} width={"20px"} height={"20px"} alt="" />
                   <p>All fields are requried</p>
                 </span>
               )}
@@ -78,11 +77,7 @@ const Footer = () => {
             ? ""
             : sent && (
                 <span className="submitted">
-                  <img
-                    src="./src/assets/images/check.png"
-                    width={"30px"}
-                    alt=""
-                  />
+                  <img src={check} width={"30px"} alt="" />
                   <p>Submitted Successfully!</p>
                 </span>
               )}
@@ -90,11 +85,7 @@ const Footer = () => {
             ? ""
             : error && (
                 <span className="server-error">
-                  <img
-                    src="src/assets/images/caution.png"
-                    width={"30px"}
-                    alt=""
-                  />
+                  <img src={servererror} width={"30px"} alt="" />
                   <p>Error Submitting. Please try again</p>
                 </span>
               )}
@@ -107,11 +98,7 @@ const Footer = () => {
               type="submit"
             >
               <p>Submit</p>
-              <img
-                src="src/assets/images/paper-plane.png"
-                width={"30px"}
-                alt=""
-              />
+              <img src={paperplane} width={"30px"} alt="" />
             </button>
           </div>
         </form>

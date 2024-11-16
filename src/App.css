@@ -408,7 +408,7 @@ nav {
 }
 
 .skills-container {
-  background-image: url("src/assets/images/about-bg.png");
+  background-image: url("./assets/images/about-bg.png");
   background-repeat: repeat;
   background-position: center;
   background-size: fill;
@@ -458,14 +458,14 @@ nav {
 }
 
 .skills {
-  background-image: url("src/assets/images/map.png");
+  background-image: url("./assets/images/map.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .projects-container {
-  background-image: url("src/assets/images/project-bg.jpg");
+  background-image: url("./assets/images/project-bg.jpg");
   background-repeat: repeat;
   background-position: center;
   background-size: fill;
