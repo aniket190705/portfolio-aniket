@@ -1,0 +1,86 @@
+input {
+  width: 239px;
+  height: 56px;
+  border-radius: 7px;
+  border: 1px #22cd6f solid;
+  background-color: #32373a;
+  padding-left: 7px;
+  color: white;
+  font-size: 1rem;
+}
+.footer {
+  width: fit-content;
+  margin: 20px auto;
+}
+.first {
+  display: flex;
+  gap: 7px;
+}
+
+.textarea {
+  width: 493px;
+  height: 100px;
+}
+
+input[type="submit"] {
+  font-weight: bolder;
+  font-size: 17px;
+  background-color: #22cd6f;
+  color: white;
+  padding-top: 0px;
+}
+
+.textarea::placeholder {
+  /* Most modern browsers support this now. */
+  position: relative;
+  top: 0;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button button {
+  width: 239px;
+  height: 50px;
+  border-radius: 7px;
+  background-color: #22cd6f;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button img {
+  position: relative;
+  left: 10px;
+}
+
+.error {
+  color: red;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+
+.submitted {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #22cd6f;
+}
+.server-error {
+  color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
