@@ -4,13 +4,13 @@ import "./App.css";
 import Card from "./assets/Components/ProjectCard";
 import Footer from "./assets/Components/Footer";
 import skill1 from "./assets/skills/c-.png";
-import skill2 from "./assets/skills/c-.png";
-import skill3 from "./assets/skills/css-3.png";
-import skill4 from "./assets/skills/express.png";
-import skill5 from "./assets/skills/html-5.png";
-import skill6 from "./assets/skills/java-script.png";
-import skill7 from "./assets/skills/mongodb.png";
-import skill8 from "./assets/skills/nextjs.png";
+import skill2 from "./assets/skills/css-3.png";
+import skill3 from "./assets/skills/express.png";
+import skill4 from "./assets/skills/html-5.png";
+import skill5 from "./assets/skills/java-script.png";
+import skill6 from "./assets/skills/mongodb.png";
+import skill7 from "./assets/skills/nextjs.jpg";
+import skill8 from "./assets/skills/nodejs.png";
 import skill9 from "./assets/skills/python.png";
 import skill10 from "./assets/skills/sql-server.png";
 
@@ -146,7 +146,7 @@ function App() {
             <img src={skill6} alt="" />
             <img src={skill7} alt="" />
             <img src={skill8} alt="" />
-            <img src={slill9} alt="" />
+            <img src={skill9} alt="" />
             <img src={skill10} alt="" />
           </div>
         </div>
