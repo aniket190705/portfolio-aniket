@@ -24,7 +24,7 @@ function App() {
       <nav>
         <div className="one">
           <div className="logo">
-            <img src="src/assets/images/logo.jpg" alt="" />
+            <img src="./src/assets/images/logo.jpg" alt="" />
           </div>
 
           <div className="list">
@@ -128,16 +128,16 @@ function App() {
             </h1>
           </div>
           <div className="skills-img">
-            <img src="src/assets/skills/c-.png" alt="" />
-            <img src="src/assets/skills/css-3.png" alt="" />
-            <img src="src/assets/skills/express.png" alt="" />
-            <img src="src/assets/skills/html-5.png" alt="" />
-            <img src="src/assets/skills/java-script.png" alt="" />
-            <img src="src/assets/skills/nextjs.jpg" alt="" />
-            <img src="src/assets/skills/nodejs.png" alt="" />
-            <img src="src/assets/skills/mongodb.png" alt="" />
-            <img src="src/assets/skills/python.png" alt="" />
-            <img src="src/assets/skills/sql-server.png" alt="" />
+            <img src="./src/assets/skills/c-.png" alt="" />
+            <img src="./src/assets/skills/css-3.png" alt="" />
+            <img src="./src/assets/skills/express.png" alt="" />
+            <img src="./src/assets/skills/html-5.png" alt="" />
+            <img src="./src/assets/skills/java-script.png" alt="" />
+            <img src="./src/assets/skills/nextjs.jpg" alt="" />
+            <img src="./src/assets/skills/nodejs.png" alt="" />
+            <img src="./src/assets/skills/mongodb.png" alt="" />
+            <img src="./src/assets/skills/python.png" alt="" />
+            <img src="./src/assets/skills/sql-server.png" alt="" />
           </div>
         </div>
       </div>

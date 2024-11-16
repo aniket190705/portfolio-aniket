@@ -79,7 +79,7 @@ const Footer = () => {
             : sent && (
                 <span className="submitted">
                   <img
-                    src="src/assets/images/check.png"
+                    src="./src/assets/images/check.png"
                     width={"30px"}
                     alt=""
                   />
