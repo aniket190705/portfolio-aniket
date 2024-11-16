@@ -3,7 +3,7 @@ import Typed from "typed.js";
 import "./App.css";
 import Card from "./assets/Components/ProjectCard";
 import Footer from "./assets/Components/Footer";
-import skill1 from "./src/assets/skills/c-.png";
+import skill1 from "./assets/skills/c-.png";
 
 function App() {
   const typedElementRef = useRef(null);
