@@ -5,7 +5,9 @@ import alertimg from "../images/alert.png";
 import check from "../images/check.png";
 import servererror from "../images/caution.png";
 import paperplane from "../images/paper-plane.png";
-
+import insta from "../images/instagram.png";
+import gmail from "../images/gmail.png";
+import linkedin from "../images/linkedin.png";
 const Footer = () => {
   const [sent, setSent] = useState(false);
   const [error, setError] = useState(false);
@@ -35,7 +37,33 @@ const Footer = () => {
 
   return (
     <footer>
+      <div className="heading">
+        <h1>
+          CONTACT <span className="green">ME</span>{" "}
+        </h1>
+      </div>
       <div className="footer">
+        <div className="contact">
+          <a
+            href="https://www.linkedin.com/in/aniketsharma1907/"
+            target="_blank"
+          >
+            <img src={linkedin} alt="" />
+          </a>
+
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=aniket190705@gmail.com"
+            target="_blank"
+          >
+            <img src={gmail} alt="" />
+          </a>
+          <a
+            href="https://www.instagram.com/aniketsharma3831/  "
+            target="_blank"
+          >
+            <img src={insta} alt="" />
+          </a>
+        </div>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="first">
             <div className="name">
