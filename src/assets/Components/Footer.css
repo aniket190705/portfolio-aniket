@@ -128,3 +128,12 @@ button img {
 footer {
   padding-bottom: 40px;
 }
+
+@media screen and (max-width: 480px) {
+  .first input {
+    width: 100px;
+  }
+  .textarea {
+    width: 100px;
+  }
+}

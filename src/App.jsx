@@ -13,10 +13,12 @@ import skill7 from "./assets/skills/nextjs.jpg";
 import skill8 from "./assets/skills/nodejs.png";
 import skill9 from "./assets/skills/python.png";
 import skill10 from "./assets/skills/sql-server.png";
-import logo from "./assets/images/logo2.jpg";
+import logo from "./assets/images/logo3.png";
 import resumeimg from "./assets/icons/right-arrow.png";
 import skillheading from "./assets/images/skills.png";
 import myimg from "./assets/images/myself.jpg";
+import more from "./assets/images/stack.png";
+import resume from "./assets/images/Aniket_Resume.pdf";
 
 function App() {
   const typedElementRef = useRef(null);
@@ -33,27 +35,47 @@ function App() {
     };
   }, []);
 
+  const [menuActive, setMenuActive] = React.useState(false);
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
   return (
     <>
       <nav>
-        <div className="one">
+        <div className="hamburger" onClick={toggleMenu}>
+          <img src={more} alt="" width={"80px"} />
+          <img src={logo} alt="" width={"80px"} />
+        </div>
+        <div className={`one ${menuActive ? "displayOne" : "noneOne"} `}>
           <div className="logo">
             <img src={logo} alt="" />
           </div>
 
-          <div className="list">
+          <div className={`list ${menuActive ? "active" : ""}`}>
             <ul>
-              <li>ABOUT</li>
-              <li>SKILL</li>
-              <li>SERVICE</li>
-              <li>PROJECT</li>
-              <li>CONTACT ME</li>
+              <a href="#about">
+                <li>ABOUT</li>
+              </a>
+              <a href="#services">
+                <li>SERVICE</li>
+              </a>
+              <a href="#skills">
+                <li>SKILL</li>
+              </a>
+              <a href="#projects">
+                <li>PROJECT</li>
+              </a>
+              <a href="#contact">
+                <li>CONTACT ME</li>
+              </a>
             </ul>
           </div>
         </div>
       </nav>
 
-      <div className="about">
+      <div className="about" id="about">
         <div className="text">
           <h1 className="green">HI,</h1>
 
@@ -62,16 +84,18 @@ function App() {
           </h1>
 
           <br />
-          <h1>
+          <h1 className="typed-green">
             <span className="typed-green" ref={typedElementRef}></span>
           </h1>
 
-          <button className="resume-button">
-            <p>Rusume</p>
-            <div className="arrow-icon">
-              <img src={resumeimg} alt="" />
-            </div>
-          </button>
+          <a href={resume} target="_blank">
+            <button className="resume-button">
+              <p>Rusume</p>
+              <div className="arrow-icon">
+                <img src={resumeimg} alt="" />
+              </div>
+            </button>
+          </a>
         </div>
 
         <div className="pic">
@@ -79,7 +103,7 @@ function App() {
         </div>
       </div>
 
-      <div className="services-container">
+      <div className="services-container" id="services">
         <div className="services">
           <div className="services-heading">
             <div className="main-heading">
@@ -133,7 +157,7 @@ function App() {
         </div>
       </div>
 
-      <div className="skills-container">
+      <div className="skills-container" id="skills">
         <div className="skills">
           <div className="skills-heading">
             <img src={skillheading} alt="" />
@@ -156,7 +180,7 @@ function App() {
         </div>
       </div>
 
-      <div className="projects-container">
+      <div className="projects-container" id="projects">
         <div className="projects">
           <div className="projects-heading">
             <div className="main-heading">
@@ -212,7 +236,7 @@ function App() {
           </a>
         </div>
       </div>
-      <div className="footer-container">
+      <div className="footer-container" id="contact">
         <Footer></Footer>
       </div>
     </>

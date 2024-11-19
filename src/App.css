@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -29,12 +30,21 @@ nav {
   font-size: 0.8rem;
 }
 
+.one a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .one ul li {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .one ul li:hover {
   border-bottom: solid #08d765 0.05rem;
+}
+
+.hamburger img {
+  display: none;
 }
 
 .about {
@@ -46,7 +56,7 @@ nav {
 }
 
 .logo img {
-  width: 80px;
+  width: 50px;
   height: auto;
 }
 
@@ -109,6 +119,11 @@ nav {
   border: 0;
 }
 
+.text a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .arrow-icon img {
   width: 1.5rem;
   height: auto;
@@ -128,14 +143,13 @@ nav {
 
 .services {
   margin: 0 auto;
-  width: 77vw;
+  width: 100%;
   position: relative;
   top: 4rem;
 }
 
 .card {
   background-color: #121617;
-
   color: white;
   height: 45vh;
   width: 35vw;
@@ -148,7 +162,7 @@ nav {
 .services-heading {
   display: flex;
   color: white;
-  justify-content: space-between;
+  justify-content: space-around;
 
   margin-bottom: 10vh;
 }
@@ -187,14 +201,6 @@ nav {
   background-color: #08d765;
   width: 0.7vw;
   height: 8vh;
-}
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #08d765;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
 }
 
 .service-content h1 {
@@ -497,4 +503,168 @@ nav {
 .footer-container {
   background-image: url("../src/assets/images/testimonials-bg.png");
   background-size: fill;
+}
+
+/* Making navigation bar to breadcrum icon */
+
+@media screen and (max-width: 768px) {
+  nav {
+    height: auto;
+    flex-direction: column;
+    z-index: 1;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .displayOne {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    /* padding: 1rem; */
+    width: 100%;
+  }
+
+  .noneOne {
+    display: none;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  .list {
+    display: none; /* Hide the menu by default */
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+  }
+
+  .one ul {
+    flex-direction: column;
+    gap: 0.7rem;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bolder;
+  }
+
+  .hamburger {
+    display: flex; /* Show the hamburger icon */
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    justify-content: space-between;
+  }
+
+  .hamburger img {
+    display: block;
+    padding: 10px;
+  }
+
+  .list.active {
+    display: flex; /* Show the menu when active */
+  }
+}
+
+/* Making about section responsive */
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  .text a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    /* padding: 2rem 1rem; */
+    margin: 0 auto;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .about .text {
+    margin: 70px auto;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about .pic {
+    margin: 1rem 0;
+    max-width: 80%;
+  }
+
+  .typed-green {
+    font-size: 1.7rem;
+    max-width: 100%;
+  }
+
+  .resume-button {
+    width: auto;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about {
+    height: auto;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .resume-button {
+    width: auto;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .green {
+    font-size: 1.5rem;
+  }
+
+  .about .text h1 {
+    font-size: 1.2rem;
+  }
+
+  .pic img {
+    max-width: 90%;
+  }
+  .main-heading p {
+    font-size: 1rem;
+  }
+  .main-heading h1 {
+    font-size: 1.8rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .one-liner {
+    font-size: 1rem;
+  }
 }
