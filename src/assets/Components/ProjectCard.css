@@ -111,3 +111,15 @@
 .heading2 {
   color: #08d765;
 }
+
+.card {
+  margin-top: 90px;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    margin: 0;
+  }
+  .card1 {
+    margin-top: 70px;
+  }
+}

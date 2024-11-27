@@ -137,15 +137,15 @@ nav {
 
 .services-container {
   background-image: url("assets/images/footer-bg.png");
-  height: 100vh;
+
   background-size: cover;
 }
 
 .services {
   margin: 0 auto;
   width: 100%;
-  position: relative;
-  top: 4rem;
+  /* position: relative;
+  top: 4rem; */
 }
 
 .card {
@@ -229,7 +229,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 40px 0;
+  /* padding: 40px 0; */
 }
 
 .container .box {
@@ -476,7 +476,7 @@ nav {
   background-position: center;
   background-size: fill;
   object-fit: cover;
-  height: 80vh;
+  /* height: 80vh;/ */
 }
 
 .projects-heading {
@@ -623,6 +623,13 @@ nav {
 }
 
 @media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+    flex-direction: column;
+  }
   .text a {
     text-decoration: none;
     color: inherit;
@@ -653,18 +660,65 @@ nav {
   .pic img {
     max-width: 90%;
   }
+
+  .main-heading {
+    width: 200px;
+  }
   .main-heading p {
-    font-size: 1rem;
+    font-size: 0.7rem;
+    width: fit-content;
+    margin-bottom: 11px;
   }
   .main-heading h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    width: fit-content;
+  }
+  .main-heading span {
+    width: fit-content;
+  }
+
+  .services-heading {
+    justify-content: center;
+    margin-bottom: 15px;
   }
 
   .cards {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .one-liner {
-    font-size: 1rem;
+  .one-liner p {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  .services {
+    height: 100%;
+  }
+
+  .container {
+    /* height: 100%; */
+    flex-direction: column;
+  }
+  .skills-img {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills-img img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .skills-container {
+    position: relative;
+  }
+
+  .skills {
+    position: absolute;
+    top: 20%;
   }
 }

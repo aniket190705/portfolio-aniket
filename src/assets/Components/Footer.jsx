@@ -73,7 +73,6 @@ const Footer = () => {
               />
             </div>
 
-            <br />
             <div className="email">
               <input
                 type="email"
@@ -81,15 +80,15 @@ const Footer = () => {
                 {...register("email", { required: true })}
               />
             </div>
+            <div className="message">
+              <input
+                className="textarea"
+                type="textarea"
+                placeholder="Message"
+                {...register("msg", { required: true })}
+              />
+            </div>
           </div>
-
-          <br />
-          <input
-            className="textarea"
-            type="textarea"
-            placeholder="Message"
-            {...register("msg", { required: true })}
-          />
 
           <br />
           <br />
