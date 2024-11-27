@@ -175,6 +175,8 @@ footer {
   .first {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .textarea {
     max-width: 100%;
@@ -200,6 +202,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
   }
   .message input {
     width: 245px;
