@@ -200,7 +200,7 @@ function App() {
           </div>
         </div>
         <div className="cards">
-          <Card
+          {/* <Card
             heading1={"Trendy "}
             heading2={"Threads"}
             desc={
@@ -233,7 +233,34 @@ function App() {
               cardName={"card3"}
               color={"white"}
             />
-          </a>
+          </a> */}
+          <Card
+            heading1={"InsightsXFactor "}
+            heading2={"Chatbot"}
+            desc={
+              "Developed a chatbot, for analyzing social media engagement by leveraging social media post data."
+            }
+            className="custom-spotlight-card"
+            spotlightColor="rgba(0, 229, 255, 0.2)"
+          ></Card>
+          <Card
+            heading1={"Trendy "}
+            heading2={"Threads"}
+            desc={
+              "Developed a secure, full-featured e-commerce platform for a clothing brand, integrating user authentication, secure payment processing, and a responsive design."
+            }
+            className="custom-spotlight-card"
+            spotlightColor="rgba(0, 229, 255, 0.2)"
+          ></Card>
+          <Card
+            heading1={"To-do "}
+            heading2={"App"}
+            desc={
+              "This app allows users to create, manage, and track their tasks efficiently with features like adding, editing, and deleting tasks."
+            }
+            className="custom-spotlight-card"
+            spotlightColor="rgba(0, 229, 255, 0.2)"
+          ></Card>
         </div>
       </div>
       <div className="footer-container" id="contact">

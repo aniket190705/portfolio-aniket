@@ -165,10 +165,23 @@ footer {
   padding-bottom: 40px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .footer {
-    padding: 5px;
+    flex-direction: column-reverse;
+    padding: 15px;
   }
+
+  form {
+    margin: 0 auto;
+  }
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .first input {
     max-width: 100%;
   }

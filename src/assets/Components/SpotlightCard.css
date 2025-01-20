@@ -1,0 +1,74 @@
+.card-spotlight {
+  position: relative;
+  border-radius: 1.5rem;
+  border: 1 px solid #222;
+  background-color: #111;
+  padding: 2rem;
+  overflow: hidden;
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  --spotlight-color: rgba(107, 255, 97, 0.59);
+  max-width: 400px;
+  color: white;
+  margin: 10px;
+  height: 270px;
+}
+
+.card-spotlight h2 {
+  text-align: center;
+}
+
+.card-spotlight p {
+  text-align: center;
+}
+
+.github-btn {
+  background-color: #22cd6f;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border: 0;
+  border-radius: 7px;
+  padding: 0.5rem 1rem;
+  margin: 10px auto;
+  position: absolute;
+  top: 80%;
+  left: 36%;
+}
+
+.up {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.card-spotlight img {
+  width: 70px;
+  height: 50px;
+}
+
+.green-heading {
+  color: #08d765;
+}
+.card-spotlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    var(--spotlight-color),
+    transparent 80%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.card-spotlight:hover::before,
+.card-spotlight:focus-within::before {
+  opacity: 0.6;
+}

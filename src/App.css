@@ -133,6 +133,8 @@ nav {
   display: flex;
   justify-content: center;
   gap: 4vh;
+  margin-top: 100px;
+  padding-bottom: 50px;
 }
 
 .services-container {
@@ -419,7 +421,7 @@ nav {
   background-position: center;
   background-size: fill;
   object-fit: cover;
-  height: 50vh;
+  height: 100%;
 }
 
 .skills-img {
@@ -434,6 +436,12 @@ nav {
 .skills-img img {
   height: 11vh;
   width: 11vh;
+  transition: ease-in-out 0.2s;
+}
+
+.skills-img img:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 0.2s;
 }
 
 .skills-heading {
@@ -566,6 +574,10 @@ nav {
   .list.active {
     display: flex; /* Show the menu when active */
   }
+
+  .skills-container {
+    height: 50vh;
+  }
 }
 
 /* Making about section responsive */
@@ -620,6 +632,17 @@ nav {
   .container {
     flex-direction: column;
   }
+
+  .skills-img img {
+    height: 70px;
+    width: 70px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -647,10 +670,6 @@ nav {
     width: auto;
     padding: 0.6rem 1rem;
     font-size: 0.9rem;
-  }
-
-  .green {
-    font-size: 1.5rem;
   }
 
   .about .text h1 {
@@ -715,6 +734,7 @@ nav {
 
   .skills-container {
     position: relative;
+    height: 50vh;
   }
 
   .skills {
