@@ -12,7 +12,7 @@ app.post("/send-email", async (req, res) => {
     console.log(name, email, msg)
 
     const transporter = nodemailer.createTransport({
-        service: "gmail",
+        service: "  ",
         port: 587,
         secure: false,
         auth: {
