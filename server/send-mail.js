@@ -5,6 +5,7 @@
 import express from "express";
 import nodemailer from "nodemailer";
 import cors from "cors";
+const PORT = process.env.PORT || 4000;
 
 const app = express();
 app.use(cors());
@@ -43,7 +44,7 @@ app.post("/send-email", async (req, res) => {
     }
 
 });
-const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
