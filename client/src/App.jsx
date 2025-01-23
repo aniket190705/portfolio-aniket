@@ -234,6 +234,7 @@ function App() {
               color={"white"}
             />
           </a> */}
+
           <Card
             heading1={"InsightsXFactor "}
             heading2={"Chatbot"}
@@ -242,6 +243,7 @@ function App() {
             }
             className="custom-spotlight-card"
             spotlightColor="rgba(0, 229, 255, 0.2)"
+            link={"https://github.com/aniket190705/InsightsXFactor"}
           ></Card>
           <Card
             heading1={"Trendy "}
@@ -251,6 +253,7 @@ function App() {
             }
             className="custom-spotlight-card"
             spotlightColor="rgba(0, 229, 255, 0.2)"
+            link={""}
           ></Card>
           <Card
             heading1={"To-do "}
@@ -260,6 +263,7 @@ function App() {
             }
             className="custom-spotlight-card"
             spotlightColor="rgba(0, 229, 255, 0.2)"
+            link={"https://github.com/aniket190705/todo-list"}
           ></Card>
         </div>
       </div>

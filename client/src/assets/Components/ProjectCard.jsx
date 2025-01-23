@@ -8,6 +8,7 @@ const Card = ({
   heading2,
   desc,
   className = "",
+  link,
   spotlightColor = "rgba(107, 255, 97, 0.59)",
 }) => {
   const divRef = useRef(null);
@@ -39,7 +40,10 @@ const Card = ({
       <br />
       <br />
       <p>{desc}</p>
-      <button className="github-btn">Learn more</button>
+
+      <a href={link} target="_blank" rel="noreferrer">
+        <button className="github-btn">Learn more</button>
+      </a>
     </div>
   );
 };
