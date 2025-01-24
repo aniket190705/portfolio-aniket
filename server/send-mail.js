@@ -5,7 +5,7 @@
 import express from "express";
 import nodemailer from "nodemailer";
 import cors from "cors";
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT;
 
 const app = express();
 app.use(cors());
@@ -24,15 +24,15 @@ app.post("/send-email", async (req, res) => {
         port: 587,
         secure: false,
         auth: {
-            user: "aniket190705@gmail.com",
-            pass: "cxgcsdfcuyxadwpt",
+            user: process.env.USER,
+            pass: process.env.PASS,
         },
     });
 
     try {
         const info = await transporter.sendMail({
-            from: "aniket190705@gmail.com",
-            to: "aniket190705@gmail.com",
+            from: process.env.USER,
+            to: process.env.USER,
             subject: "New Contact Form Submission",
             text: `Name: ${name}\nEmail: ${email}\nMessage: ${msg}`,
         });
