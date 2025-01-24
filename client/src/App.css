@@ -237,7 +237,7 @@ nav {
 .container .box {
   position: relative;
   width: 20vw;
-  height: 41vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
