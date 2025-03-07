@@ -90,7 +90,7 @@ function App() {
 
           <a href={resume} target="_blank">
             <button className="resume-button">
-              <p>Rusume</p>
+              <p>Resume</p>
               <div className="arrow-icon">
                 <img src={resumeimg} alt="" />
               </div>
