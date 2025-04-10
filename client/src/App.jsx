@@ -19,7 +19,7 @@ import skillheading from "./assets/images/skills.png";
 import myimg from "./assets/images/myself.jpg";
 import more from "./assets/images/stack.png";
 import resume from "./assets/images/Aniket_Resume.pdf";
-
+import { Analytics } from "@vercel/analytics/react";
 function App() {
   const typedElementRef = useRef(null);
 
@@ -270,6 +270,7 @@ function App() {
       <div className="footer-container" id="contact">
         <Footer></Footer>
       </div>
+      <Analytics />
     </>
   );
 }
