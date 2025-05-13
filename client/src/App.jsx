@@ -253,7 +253,7 @@ function App() {
             }
             className="custom-spotlight-card"
             spotlightColor="rgba(0, 229, 255, 0.2)"
-            link={""}
+            link={"https://github.com/aniket190705/Trendy-Threads"}
           ></Card>
           <Card
             heading1={"To-do "}
@@ -263,7 +263,7 @@ function App() {
             }
             className="custom-spotlight-card"
             spotlightColor="rgba(0, 229, 255, 0.2)"
-            link={"https://github.com/aniket190705/todo-list"}
+            link={"https://github.com/aniket190705/todo-app"}
           ></Card>
         </div>
       </div>
