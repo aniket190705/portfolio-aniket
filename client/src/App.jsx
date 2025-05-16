@@ -186,7 +186,7 @@ function App() {
             <div className="main-heading">
               <p>WORKING PROCESS</p>
               <h1>
-                LATES WORKING <span className="green-sol">PROJECTS</span>
+                LATEST WORKING <span className="green-sol">PROJECTS</span>
               </h1>
             </div>
 
